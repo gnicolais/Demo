@@ -6,7 +6,9 @@ Install welcome and greetings interfaces jars running
 
 - mvn clean install
 
-pull consul image from docker and run it with default settings
+pull consul image from docker and run it with the command_
+
+```docker run -it -p 8500:8500 --name consul-demo -t consul```
 
 run both services and check that they have been correctly registered on consul 
 - http://localhost:8500/
