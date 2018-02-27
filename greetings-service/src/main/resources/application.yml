@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: greetings-service
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${random.value}
+
+server.port: 8081
